@@ -9,7 +9,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<compiler-plugin.version>3.5.1</compiler-plugin.version>
 		<spring-boot.version>2.1.2.RELEASE</spring-boot.version>
-		<axis2.version>1.7.9</axis2.version>
+		<axis2.version>1.7.7</axis2.version>
 	</properties>
 	<build>
 		<plugins>
@@ -59,7 +59,7 @@
 					<vmArgs>
 						<vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
 					</vmArgs>
-					<wsdlFile>${basedir}/src/main/resources/QuickBookService.wsdl</wsdlFile>
+					<wsdlFile>${basedir}/src/main/resources/META-INF/service/QuickBookService.wsdl</wsdlFile>
 					<databindingName>jaxbri</databindingName>
 					<generateServerSide>true</generateServerSide>
 					<generateServerSideInterface>true</generateServerSideInterface>
@@ -79,7 +79,7 @@
 				<version>${spring-boot.version}</version>
 				<configuration>
 					<fork>true</fork>
-					<mainClass>com.sillycatspringbootaxis.SpringBootAxisApplication</mainClass>
+					<mainClass>com.sillycat.springbootaxis.SpringBootAxisApplication</mainClass>
 				</configuration>
 				<executions>
 					<execution>
