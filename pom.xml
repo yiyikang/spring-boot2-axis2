@@ -49,7 +49,7 @@
 				</dependencies>
 				<executions>
 					<execution>
-						<id>generacion-codigo-ws</id>
+						<id>generacion-quickbook-ws</id>
 						<goals>
 							<goal>wsdl2code</goal>
 						</goals>
@@ -63,6 +63,7 @@
 					<databindingName>jaxbri</databindingName>
 					<generateServerSide>true</generateServerSide>
 					<generateServerSideInterface>true</generateServerSideInterface>
+					<generateServicesXml>true</generateServicesXml>
 					<generateTestcase>true</generateTestcase>
 					<packageName>com.sillycat.springbootaxis.service.axis2.generated</packageName>
 					<namespaceURIs>

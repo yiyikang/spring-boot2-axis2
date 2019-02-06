@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR" shutdownHook="disable">
+ <Appenders>
+   <Console name="CONSOLE" target="SYSTEM_OUT">
+     <PatternLayout pattern="(%d{yyyy-MM-dd'T'HH:mm:ss.SXXX}) %-7p - %C %M - %m\r\n%throwable{full}"/>
+   </Console>
+ </Appenders>
+ <Loggers>
+   <Logger name="com.google.inject.internal" level="WARN"/>
+   <Logger name="com.optimaize" level="WARN"/>
+   <Logger name="net.sourceforge.cobertura" level="WARN"/>
+   <Logger name="org.hibernate" level="WARN"/>
+   <Logger name="com.cloudsnap.connector.netsuite.web" level="INFO" />
+   <Root level="ALL">
+     <AppenderRef ref="CONSOLE" level="INFO"/>
+   </Root>
+ </Loggers>
+</Configuration>
