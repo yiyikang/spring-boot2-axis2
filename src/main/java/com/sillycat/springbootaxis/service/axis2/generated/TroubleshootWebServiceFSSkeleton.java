@@ -82,6 +82,9 @@ public class TroubleshootWebServiceFSSkeleton implements TroubleshootWebServiceF
 //        throw new java.lang.UnsupportedOperationException("Please implement " +
 //            this.getClass().getName() + "#authenticate");
 		System.out.println("enter the request-----------authenticate");
+		System.out.println("authenticate8:" + authenticate8);
+		System.out.println("getStrUserName:" + authenticate8.getStrUserName());
+		System.out.println("getStrPassword:" + authenticate8.getStrPassword());
 		AuthenticateResponse response = new AuthenticateResponse();
 		response.getAuthenticateResult().getString().add(UUID.randomUUID().toString());
 		response.getAuthenticateResult().getString().add("NONE");
