@@ -61,7 +61,9 @@
 					</vmArgs>
 					<wsdlFile>${basedir}/src/main/resources/META-INF/service/QuickBookService.wsdl</wsdlFile>
 					<databindingName>jaxbri</databindingName>
+					<!--  
 					<generateServerSide>true</generateServerSide>
+					-->
 					<generateServerSideInterface>true</generateServerSideInterface>
 					<generateServicesXml>true</generateServicesXml>
 					<generateTestcase>true</generateTestcase>
