@@ -36,6 +36,7 @@
 					</includes>
 				</configuration>
 			</plugin>
+			<!-- 
 			<plugin>
 				<groupId>org.apache.axis2</groupId>
 				<artifactId>axis2-wsdl2code-maven-plugin</artifactId>
@@ -61,9 +62,9 @@
 					</vmArgs>
 					<wsdlFile>${basedir}/src/main/resources/META-INF/service/QuickBookService.wsdl</wsdlFile>
 					<databindingName>jaxbri</databindingName>
-					<!--  
+					
 					<generateServerSide>true</generateServerSide>
-					-->
+					 
 					<generateServerSideInterface>true</generateServerSideInterface>
 					<generateServicesXml>true</generateServicesXml>
 					<generateTestcase>true</generateTestcase>
@@ -76,6 +77,7 @@
 					</namespaceURIs>
 				</configuration>
 			</plugin>
+			-->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
