@@ -8,6 +8,8 @@ package com.sillycat.springbootaxis.service.axis2.generated;
 
 import com.intuit.developer.ArrayOfString;
 import com.intuit.developer.AuthenticateResponse;
+import com.intuit.developer.ClientVersionResponse;
+import com.intuit.developer.ServerVersionResponse;
 
 /**
  *  TroubleshootWebServiceFSSkeleton java skeleton for the axisService
@@ -49,8 +51,11 @@ public class TroubleshootWebServiceFSSkeleton
     public com.intuit.developer.ServerVersionResponse serverVersion(
         com.intuit.developer.ServerVersion serverVersion4) {
         //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " +
-            this.getClass().getName() + "#serverVersion");
+//        throw new java.lang.UnsupportedOperationException("Please implement " +
+//            this.getClass().getName() + "#serverVersion");
+    	ServerVersionResponse response = new ServerVersionResponse();
+    	response.setServerVersionResult("1.0");
+    	return response;
     }
 
     /**
@@ -107,8 +112,11 @@ public class TroubleshootWebServiceFSSkeleton
     public com.intuit.developer.ClientVersionResponse clientVersion(
         com.intuit.developer.ClientVersion clientVersion12) {
         //TODO : fill this with the necessary business logic
-        throw new java.lang.UnsupportedOperationException("Please implement " +
-            this.getClass().getName() + "#clientVersion");
+//        throw new java.lang.UnsupportedOperationException("Please implement " +
+//            this.getClass().getName() + "#clientVersion");
+    	ClientVersionResponse response = new ClientVersionResponse();
+    	response.setClientVersionResult("1.0");
+    	return response;
     }
 
     /**
