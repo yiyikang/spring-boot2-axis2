@@ -49,7 +49,7 @@ public class Axis2ServiceRegister {
 
 	private void loadServices() {
 		try {
-			registerServiceXml(new ClassPathResource("META-INF/service/services.xml"), "wsService");
+			registerServiceXml(new ClassPathResource("META-INF/service/services.xml"), "TroubleshootWebServiceFS");
 			registerServiceAar(new ClassPathResource("version-1.7.7.aar"), "version");
 		} catch (IOException e) {
 			logger.error("error when load service: {}", e);
