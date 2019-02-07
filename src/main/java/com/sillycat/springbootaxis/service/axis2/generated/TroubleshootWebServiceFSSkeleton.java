@@ -53,6 +53,7 @@ public class TroubleshootWebServiceFSSkeleton implements TroubleshootWebServiceF
 		// TODO : fill this with the necessary business logic
 //        throw new java.lang.UnsupportedOperationException("Please implement " +
 //            this.getClass().getName() + "#serverVersion");
+		System.out.println("enter the request-----------serverVersion");
 		ServerVersionResponse response = new ServerVersionResponse();
 		response.setServerVersionResult("1.0");
 		return response;
@@ -80,9 +81,12 @@ public class TroubleshootWebServiceFSSkeleton implements TroubleshootWebServiceF
 		// TODO : fill this with the necessary business logic
 //        throw new java.lang.UnsupportedOperationException("Please implement " +
 //            this.getClass().getName() + "#authenticate");
+		System.out.println("enter the request-----------authenticate");
 		AuthenticateResponse response = new AuthenticateResponse();
 		response.getAuthenticateResult().getString().add(UUID.randomUUID().toString());
 		response.getAuthenticateResult().getString().add("NONE");
+		System.out.println(response);
+		System.out.println("enter the request-----------end");
 		return response;
 	}
 
@@ -111,6 +115,7 @@ public class TroubleshootWebServiceFSSkeleton implements TroubleshootWebServiceF
 		// TODO : fill this with the necessary business logic
 //        throw new java.lang.UnsupportedOperationException("Please implement " +
 //            this.getClass().getName() + "#clientVersion");
+		System.out.println("enter the request-----------clientVersion");
 		return null;
 	}
 
