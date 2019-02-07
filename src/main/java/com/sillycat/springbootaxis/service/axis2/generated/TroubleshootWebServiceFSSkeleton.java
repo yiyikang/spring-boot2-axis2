@@ -111,9 +111,7 @@ public class TroubleshootWebServiceFSSkeleton
         //TODO : fill this with the necessary business logic
 //        throw new java.lang.UnsupportedOperationException("Please implement " +
 //            this.getClass().getName() + "#clientVersion");
-    	ClientVersionResponse response = new ClientVersionResponse();
-    	response.setClientVersionResult("1.0");
-    	return response;
+    	return null;
     }
 
     /**
