@@ -8,6 +8,7 @@ package com.sillycat.springbootaxis.service.axis2.generated;
 
 import java.util.UUID;
 
+import com.intuit.developer.ArrayOfString;
 import com.intuit.developer.AuthenticateResponse;
 import com.intuit.developer.ServerVersionResponse;
 
@@ -86,9 +87,16 @@ public class TroubleshootWebServiceFSSkeleton implements TroubleshootWebServiceF
 		System.out.println("getStrUserName:" + authenticate8.getStrUserName());
 		System.out.println("getStrPassword:" + authenticate8.getStrPassword());
 		AuthenticateResponse response = new AuthenticateResponse();
-		response.getAuthenticateResult().getString().add(UUID.randomUUID().toString());
-		response.getAuthenticateResult().getString().add("NONE");
-		System.out.println(response);
+		System.out.println("step1");
+		ArrayOfString arr = new ArrayOfString();
+		System.out.println("step2");
+		arr.getString().add(UUID.randomUUID().toString());
+		System.out.println("step3");
+		arr.getString().add("NONE");
+		System.out.println("step4");
+		response.setAuthenticateResult(arr);
+		System.out.println("step5");
+		System.out.println(response.toString());
 		System.out.println("enter the request-----------end");
 		return response;
 	}
